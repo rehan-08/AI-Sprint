@@ -1,0 +1,58 @@
+ingredient1,ingredient2,severity,description,risk_level,affected_organ
+Aspirin,Ibuprofen,Moderate,"Increased risk of gastrointestinal bleeding.",Moderate,Stomach
+Warfarin,Aspirin,Major,"Increased bleeding risk; avoid combination.",High,Blood
+Lisinopril,Potassium supplements,Moderate,"Risk of hyperkalemia.",Moderate,Kidney
+Metformin,Alcohol,Minor,"May increase risk of lactic acidosis.",Mild,General
+Simvastatin,Grapefruit juice,Major,"Increased risk of myopathy.",High,Muscle
+Amoxicillin,Probenecid,Moderate,"Probenecid increases amoxicillin levels.",Moderate,Kidney
+Aspirin,Clopidogrel,Major,"Increased bleeding risk; caution required.",High,Blood
+Ibuprofen,Lisinopril,Moderate,"May reduce antihypertensive effect.",Moderate,Kidney
+Ibuprofen,Furosemide,Moderate,"May reduce diuretic efficacy.",Moderate,Kidney
+Metformin,Cimetidine,Moderate,"Increased metformin concentration.",Moderate,Kidney
+Ciprofloxacin,Antacids,Moderate,"Reduced antibiotic absorption.",Moderate,Gut
+Ciprofloxacin,Theophylline,Major,"Increased theophylline levels; risk of toxicity.",High,Lungs
+Digoxin,Amiodarone,Major,"Increased digoxin toxicity risk.",High,Heart
+Digoxin,Furosemide,Moderate,"Hypokalemia increases digoxin toxicity.",Moderate,Heart
+Warfarin,Amiodarone,Major,"Increased INR; bleeding risk.",High,Blood
+Warfarin,Ciprofloxacin,Major,"Increased INR; bleeding risk.",High,Blood
+Warfarin,Metronidazole,Major,"Increased INR; bleeding risk.",High,Blood
+Simvastatin,Amlodipine,Moderate,"Increased statin levels; muscle pain risk.",Moderate,Muscle
+Atorvastatin,Clarithromycin,Major,"Increased statin levels; rhabdomyolysis risk.",High,Muscle
+Levothyroxine,Calcium,Moderate,"Reduced thyroid hormone absorption.",Moderate,Thyroid
+Levothyroxine,Iron,Moderate,"Reduced thyroid hormone absorption.",Moderate,Thyroid
+Omeprazole,Clopidogrel,Moderate,"Reduced clopidogrel activation.",Moderate,Heart
+Omeprazole,Methotrexate,Major,"Increased methotrexate toxicity.",High,Bone marrow
+Methotrexate,NSAIDs,Major,"Increased methotrexate toxicity.",High,Kidney
+Phenytoin,Carbamazepine,Moderate,"Altered anticonvulsant levels.",Moderate,Brain
+Phenytoin,Valproate,Major,"Altered anticonvulsant levels.",High,Brain
+Lithium,NSAIDs,Major,"Increased lithium levels; toxicity risk.",High,Kidney
+Lithium,Thiazides,Major,"Increased lithium levels; toxicity risk.",High,Kidney
+Lisinopril,Losartan,Moderate,"Increased risk of hyperkalemia.",Moderate,Kidney
+Lisinopril,Spironolactone,Major,"Severe hyperkalemia risk.",High,Kidney
+Metoprolol,Verapamil,Major,"Bradycardia; heart block risk.",High,Heart
+Metoprolol,Diltiazem,Major,"Bradycardia; heart block risk.",High,Heart
+Theophylline,Erythromycin,Moderate,"Increased theophylline levels.",Moderate,Lungs
+Sildenafil,Nitrates,Major,"Severe hypotension; contraindicated.",High,Heart
+Tamsulosin,Amlodipine,Moderate,"Additive hypotensive effect.",Moderate,Heart
+Clonidine,Metoprolol,Major,"Severe bradycardia.",High,Heart
+Phenelzine,Sertraline,Major,"Serotonin syndrome risk.",High,Brain
+Phenelzine,Tyramine,Major,"Hypertensive crisis.",High,Heart
+Sertraline,Ibuprofen,Moderate,"Increased bleeding risk.",Moderate,Blood
+Sertraline,Sumatriptan,Moderate,"Serotonin syndrome risk.",Moderate,Brain
+Tramadol,Sertraline,Major,"Serotonin syndrome risk.",High,Brain
+Tramadol,Phenelzine,Major,"Serotonin syndrome risk.",High,Brain
+Gabapentin,Morphine,Major,"Respiratory depression risk.",High,Lungs
+Alcohol,Diazepam,Major,"CNS depression; respiratory risk.",High,Brain
+Alcohol,Morphine,Major,"Respiratory depression.",High,Lungs
+Alcohol,Metronidazole,Minor,"Disulfiram-like reaction.",Mild,General
+Metronidazole,Disulfiram,Major,"Psychotic reaction.",High,Brain
+Rifampin,Ethinyl estradiol,Moderate,"Reduced contraceptive efficacy.",Moderate,Reproductive
+Rifampin,Warfarin,Moderate,"Reduced warfarin efficacy.",Moderate,Blood
+Carbamazepine,Warfarin,Moderate,"Reduced warfarin efficacy.",Moderate,Blood
+Phenobarbital,Warfarin,Moderate,"Reduced warfarin efficacy.",Moderate,Blood
+Valproate,Aspirin,Moderate,"Increased valproate levels.",Moderate,Brain
+Ciprofloxacin,Metformin,Moderate,"Potential hypoglycemia.",Moderate,Blood
+Sulfonylureas,Alcohol,Moderate,"Disulfiram-like reaction; hypoglycemia.",Moderate,Blood
+Sulfonylureas,NSAIDs,Moderate,"Increased hypoglycemic effect.",Moderate,Blood
+Levodopa,Intermittent fasting,Moderate,"Fluctuating drug levels.",Moderate,Brain
+Levodopa,Antipsychotics,Moderate,"Reduced levodopa efficacy.",Moderate,Brain
