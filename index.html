@@ -1,72 +1,103 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>MedSafe Dashboard</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MedSafe Dashboard</title>
 
-<link rel="stylesheet" href="style.css">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-</head>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<body>
+  <body>
+    <nav class="navbar">
+      <div class="logo">💊 MedSafe</div>
 
-<nav class="navbar">
-    <div class="logo">💊 MedSafe</div>
-    <div class="nav-links">
-        <a class="active" onclick="showSection('home', this)">Home</a>
-        <a onclick="showSection('medicines', this)">My Medicines</a>
-        <a onclick="showSection('reports', this)">Report & Insights</a>
-    </div>
-</nav>
-
-<section id="home" class="section active">
-    <h1>Welcome to MedSafe</h1>
-    <div class="card">
-        <p>Check medicine interactions and stay safe.</p>
-    </div>
-</section>
-
-<section id="medicines" class="section">
-    <h1>My Medicines</h1>
-
-    <div class="card">
-        <div class="input-row">
-            <input type="text" id="medicineName" placeholder="Enter medicine name">
-            <button onclick="addMedicine()">Add</button>
+      <div class="nav-right">
+        <div class="nav-links">
+          <a class="active" onclick="showSection('home', this)">Home</a>
+          <a onclick="showSection('medicines', this)">My Medicines</a>
+          <a onclick="showSection('reports', this)">Report</a>
         </div>
 
-        <ul id="medicineList"></ul>
+        <div class="profile-box" onclick="toggleProfile()">
+          👤 <span id="profileName"></span>
+        </div>
+      </div>
+    </nav>
 
-        <button class="check-btn" onclick="checkInteractions()">Check Interaction</button>
+    <section id="home" class="section active">
+      <h1>Welcome to MedSafe</h1>
+      <div class="card">
+        <p>Check medicine interactions and stay safe.</p>
+      </div>
+    </section>
+    <section id="medicines" class="section">
+      <h1>My Medicines</h1>
 
-        <div id="resultBox"></div>
-    </div>
-</section>
+      <div class="medicine-layout">
+        <div class="card left-panel">
+          <h1>My Medicines</h1>
 
-<section id="reports" class="section">
-    <h1>Report & Insights</h1>
+          <div class="card">
+            <div class="input-row">
+              <input
+                type="text"
+                id="medicineName"
+                placeholder="Enter medicine name"
+              />
+              <button onclick="addMedicine()">Add</button>
+            </div>
 
-    <div class="card">
+            <ul id="medicineList"></ul>
+
+            <button class="check-btn" onclick="checkInteractions()">
+              Check Interaction
+            </button>
+
+            <div id="resultBox"></div>
+          </div>
+        </div>
+
+        <div class="card right-panel">
+          <h3>Compatibility Scale</h3>
+
+          <div class="scale contraindicated">Contraindicated</div>
+          <div class="scale major">Major</div>
+          <div class="scale moderate">Moderate</div>
+          <div class="scale minor">Minor</div>
+          <div class="scale safe">Safe</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="reports" class="section">
+      <h1>Report & Insights</h1>
+
+      <div class="card">
         <h3>Summary</h3>
         <p>Total Checks: <span id="totalChecks">0</span></p>
         <p>Severe Interactions: <span id="severeCount">0</span></p>
-    </div>
+      </div>
 
-    <div class="card">
+      <div class="card">
         <h3>History</h3>
         <table id="reportTable">
-            <thead>
-                <tr>
-                    <th>Medicines</th>
-                    <th>Severity</th>
-                </tr>
-            </thead>
-            <tbody></tbody>
+          <thead>
+            <tr>
+              <th>Medicines</th>
+              <th>Severity</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
         </table>
-    </div>
-</section>
+      </div>
+    </section>
 
-<script src="script.js"></script>
-</body>
+    <script src="script.js"></script>
+    <script src="auth.js"></script>
+  </body>
 </html>
